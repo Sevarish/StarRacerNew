@@ -39,24 +39,24 @@ public class PlayerMovement : MonoBehaviour {
         if (myT.position.x <= maxHorRight && x < 0)
         {
             
-            transform.Translate(x * Time.deltaTime * -speedHor, 0, 0);
+            transform.Translate(x * Time.deltaTime * -speedHor * 1.5f, 0, 0);
         }
         else if (myT.position.x >= maxHorLeft && x > 0)
         {
             
-            transform.Translate(x * Time.deltaTime * -speedHor, 0, 0);
+            transform.Translate(x * Time.deltaTime * -speedHor * 1.5f, 0, 0);
         }
 
-        if (y > 0 && yPosition <= 60)
+        if (y > 0 && yPosition <= 40)
         {
-            float actualY = y / 8; 
+            float actualY = y / 6; 
             yPosition++;
             transform.Translate(0 ,actualY, 0);
         }
 
-        if (y < 0 && yPosition >= -60)
+        if (y < 0 && yPosition >= -30)
         {
-            float actualY = y / 8;
+            float actualY = y / 6;
             yPosition--;
             transform.Translate(0, actualY, 0);
         }

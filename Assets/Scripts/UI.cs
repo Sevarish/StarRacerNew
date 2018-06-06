@@ -97,7 +97,7 @@ public class UI : MonoBehaviour {
 
             case 0:
                 imgr.texture = one;
-                Debug.Log("Error");
+
 
                 break;
             case 1:
@@ -126,7 +126,7 @@ public class UI : MonoBehaviour {
 
                 break;
             default:
-                Debug.Log("Error");
+                
                 break;
         }
 

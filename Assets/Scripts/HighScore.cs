@@ -43,7 +43,7 @@ public class HighScore : MonoBehaviour
         }
         float hgsc = Mathf.Round(highScoreCount);
         string highScoreString = hgsc.ToString("n0");
-        highScoreText.text = "High Score: " + highScoreString + " KM"; 
+        highScoreText.text = "High Score: \n" + highScoreString + " KM"; 
 
         if (scoreCount >= 300)
         {
